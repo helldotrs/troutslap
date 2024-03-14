@@ -13,11 +13,6 @@ args = parser.parse_args()
 source_var  = "Admin"           if args.source is None else args.source
 target_var  = "them seleves"    if args.target is None else args.target
 slap_string = f"{source_var} slaps {target_var} around a bit with a large trout"
-rtfm_var    = """rtfm:
---host host-address
---target target-address
---output file-name (optional)
-"""
 
 if not args.output: #False being default state
     print(slap_string)
