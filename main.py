@@ -17,4 +17,8 @@ slap_string = f"{source_var} slaps {target_var} around a bit with a large trout"
 if not args.output: #False being default state
     print(slap_string)
 else:
-    pass
+    output_name = "results/date-n-time.txt"
+    output_file = open("output_name","w")
+    output_file.write(slap_string)
+    output_file.close()
+    print(f"Results saved to {output_name}")
