@@ -18,7 +18,7 @@ if not args.output: #False being default state
     print(slap_string)
 else:
     output_name = "results/date-n-time.txt"
-    output_file = open("output_name","w")
-    output_file.write(slap_string)
+    output_file = open(output_name,"w")
+    output_file.write(slap_string + "\n")
     output_file.close()
     print(f"Results saved to {output_name}")
