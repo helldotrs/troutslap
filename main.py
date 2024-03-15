@@ -1,7 +1,5 @@
 import argparse
 
-
-
 parser = argparse.ArgumentParser(description="test-tool")
 
 parser.add_argument("-t", "--target", type=str, help="Target address")
