@@ -17,6 +17,13 @@ def ping_target():
     pass
     # ping -c 1 -W 128 {target_var}
 
+def export_to_terminal():
+    pass
+def export_to_json():
+    pass
+def export_to_sql():
+    pass
+
 if not args.output: #False being default state
     print(slap_string)
 else:
