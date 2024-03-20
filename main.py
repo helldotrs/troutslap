@@ -18,14 +18,14 @@ def ping_target():
     # ping -c 1 -W 128 {target_var}
 
 def export_to_terminal():
-    pass
+    print(slap_string)
 def export_to_json():
     pass
 def export_to_sql():
     pass
 
 if not args.output: #False being default state
-    print(slap_string)
+    export_to_terminal()
 else:
     output_name = "results/date-n-time.txt"
     output_file = open(output_name,"w")
