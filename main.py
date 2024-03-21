@@ -1,7 +1,7 @@
 import argparse
 import subprocess
 
-parser = argparse.ArgumentParser(description="test-tool")
+parser = argparse.ArgumentParser(description="lightweight demo tool.")
 
 parser.add_argument("-t", "--target", type=str, help="Target address")
 parser.add_argument("-s", "--source", type=str, help="Source address")
