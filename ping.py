@@ -1,10 +1,12 @@
 import subprocess
 
-# Define the command you want to run as a list
-command = ["echo", "Hello, world!"]
+# define
+command = ["ping", "-c", "1", "127.0.0.1"]
 
-# Run the command
+# run
 process = subprocess.run(command, capture_output=True, text=True)
 
-# Print the output
-print("Command output:", process.stdout)
+# saving output
+ping_output = process.stdout
+
+print("Ping output:", ping_output)
