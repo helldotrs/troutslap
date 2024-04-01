@@ -14,7 +14,7 @@ target_var  = "them seleves"    if args.target is None else args.target
 slap_string = f"{source_var} slaps {target_var} around a bit with a large trout"
 
 def ping_target():
-    pass
+    return subprocess.run(f"ping -c 1 -W 128 {target_var}", caputre_output=True, text=True, shell=True)
     # ping -c 1 -W 128 {target_var}
 
 def export_to_terminal():
