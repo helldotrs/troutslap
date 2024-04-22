@@ -17,15 +17,20 @@ def ping_target():
     return subprocess.run(f"ping -c 1 -W 128 {target_var}", caputre_output=True, text=True, shell=True).stdout
     # ping -c 1 -W 128 {target_var}
 
-def export_to_terminal():
+def print_result():
     print(slap_string)
-def export_to_json():
-    pass
-def export_to_sql():
-    pass
+def export_result(export_as="csv"):
+    if export_as == "csv" or export_as == "txt": #fix me: remove txt option
+        pass
+    elif export_as == "json":
+        pass
+    elif export_as == "sql":
+        pass
+    else:
+        pass #raise error
 
 if not args.output: #False being default state
-    export_to_terminal()
+    print_result()
 else:
     output_name = "results/date-n-time.txt"
     output_file = open(output_name,"w")
