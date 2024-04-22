@@ -27,7 +27,7 @@ def export_result(export_as="csv"):
     elif export_as == "sql":
         pass
     else:
-        pass #raise error
+        raise ValueError("incorrect/unsupported export value")
 
 if not args.output: #False being default state
     print_result()
