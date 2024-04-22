@@ -33,9 +33,11 @@ def export_result(export_as="txt"):
         pass
     else:
         raise ValueError("incorrect/unsupported export value")
+        
+    print(f"Results saved to {output_name}")
 
 if not args.output: #False being default state
     print_result()
 else:
     export_result(txt)
-    print(f"Results saved to {output_name}")
+    
