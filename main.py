@@ -19,8 +19,13 @@ def ping_target():
 
 def print_result():
     print(slap_string)
-def export_result(export_as="csv"):
-    if export_as == "csv" or export_as == "txt": #fix me: remove txt option
+def export_result(export_as="txt"):
+    if   export_as == "txt":
+            output_name = "results/date-n-time.txt"
+            output_file = open(output_name,"w")
+            output_file.write(slap_string + "\n")
+            output_file.close()
+    elif export_as == "csv":
         pass
     elif export_as == "json":
         pass
@@ -32,8 +37,5 @@ def export_result(export_as="csv"):
 if not args.output: #False being default state
     print_result()
 else:
-    output_name = "results/date-n-time.txt"
-    output_file = open(output_name,"w")
-    output_file.write(slap_string + "\n")
-    output_file.close()
+    export_result(txt)
     print(f"Results saved to {output_name}")
