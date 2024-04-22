@@ -21,7 +21,7 @@ def print_result():
     print(slap_string)
 def export_result(export_as="txt"):
     if   export_as == "txt":
-            output_name = "results/date-n-time.txt"
+            output_name = "date-n-time.txt"
             output_file = open(output_name,"w")
             output_file.write(slap_string + "\n")
             output_file.close()
