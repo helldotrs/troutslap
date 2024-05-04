@@ -20,19 +20,12 @@ def ping_target():
 def print_result():
     print(slap_string)
 def export_result(export_as="txt"):
-    if   export_as == "txt":
+    if True:
             output_name = "date-n-time.txt"
             output_file = open(output_name,"w")
             output_file.write(slap_string + "\n")
             output_file.close()
-    elif export_as == "csv":
-        pass
-    elif export_as == "json":
-        pass
-    elif export_as == "sql":
-        pass
-    else:
-        raise ValueError("incorrect/unsupported export value")
+
         
     print(f"Results saved to {output_name}")
 
