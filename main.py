@@ -20,11 +20,10 @@ def ping_target():
 def print_result():
     print(slap_string)
 def export_result(export_as="txt"):
-    if True:
-            output_name = "date-n-time.txt"
-            output_file = open(output_name,"w")
-            output_file.write(slap_string + "\n")
-            output_file.close()
+    output_name = "date-n-time.txt"
+    output_file = open(output_name,"w")
+    output_file.write(slap_string + "\n")
+    output_file.close()
 
         
     print(f"Results saved to {output_name}")
